@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray1"
+    tools:context="com.example.sarnobatvipul.mydocapp.ReminderActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_ptprofile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/lightblue"
+        >
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_backarrow_black_24dp"
+            android:tint="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Your Reminder"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/rellay_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toolbar_ptprofile"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/title_rel"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="05dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@color/darkgray"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:hint=""
+                android:textColor="@color/darkgray"
+                android:textSize="25dp"
+                />
+            <!--
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/Profile_Image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginRight="14dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/pt_icon"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/lightgray02"
+                            app:civ_circle_background_color="@color/lightestgray"/>
+            -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/darkgray"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/dose_rel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/title_rel"
+            android:layout_alignLeft="@+id/title_rel"
+            android:layout_alignRight="@+id/title_rel"
+            android:layout_alignStart="@+id/title_rel"
+            android:layout_below="@+id/title_rel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Dosage"
+                android:textColor="@color/darkgray"
+                android:textSize="20dp"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/dose_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:layout_toEndOf="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:text=""
+                android:gravity="end|center"
+                android:textColor="@color/darkgray"
+                android:textSize="21dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/darkgray" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/timing_rel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/dose_rel"
+            android:layout_alignLeft="@+id/dose_rel"
+            android:layout_alignRight="@+id/dose_rel"
+            android:layout_alignStart="@+id/dose_rel"
+            android:layout_below="@+id/dose_rel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Timing"
+                android:textColor="@color/darkgray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/timing_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/darkgray"
+                android:textSize="17dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/darkgray" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/days_rel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/timing_rel"
+            android:layout_alignLeft="@+id/timing_rel"
+            android:layout_alignRight="@+id/timing_rel"
+            android:layout_alignStart="@+id/timing_rel"
+            android:layout_below="@+id/timing_rel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Days"
+                android:textColor="@color/darkgray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/days_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/darkgray"
+                android:textSize="17dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/darkgray" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/duration_rel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/days_rel"
+            android:layout_alignLeft="@+id/days_rel"
+            android:layout_alignRight="@+id/days_rel"
+            android:layout_alignStart="@+id/days_rel"
+            android:layout_below="@+id/days_rel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Duration"
+                android:textColor="@color/darkgray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/duration_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/darkgray"
+                android:textSize="17dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/darkgray" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/patientbutton_rel"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/patientaddr_rel"
+            android:layout_alignParentBottom="true"
+            >
+
+
+            <Button
+                android:id="@+id/submitbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/four_30radius_btn"
+                android:shadowColor="@color/black"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

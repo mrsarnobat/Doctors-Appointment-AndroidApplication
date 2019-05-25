@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "242313983571",
+    "firebase_url": "https://mydocapp-020.firebaseio.com",
+    "project_id": "mydocapp-020",
+    "storage_bucket": "mydocapp-020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242313983571:android:25fd4a4b582a6271",
+        "android_client_info": {
+          "package_name": "com.example.sarnobatvipul.mydocapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242313983571-j1icfrr8qn1nb9slgtn06u8dnha0na4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sarnobatvipul.mydocapp",
+            "certificate_hash": "07a425e51473be63f8a573d26e4adbb3916893e7"
+          }
+        },
+        {
+          "client_id": "242313983571-icpk0tdk13ieqe9u5an8tc7fo66rrrj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQNBqIg2nFpsbOC0JTviKkBsqRMYrfpow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242313983571-icpk0tdk13ieqe9u5an8tc7fo66rrrj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

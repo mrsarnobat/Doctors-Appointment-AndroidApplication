@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/pt_contact_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/contact"
+        android:textSize="20dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:layout_marginLeft="05dp"
+        android:layout_marginRight="05dp"
+        app:met_mask="+91##########"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>

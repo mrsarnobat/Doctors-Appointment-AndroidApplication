@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray"
+    tools:context="com.example.sarnobatvipul.mydocapp.SignIn_Pt_Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/img_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/aquablue"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/pt_imgView_ic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/pt_icon"/>
+
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_below="@+id/img_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SignIn"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/lightblue1"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+
+    </RelativeLayout>
+
+    <!--
+<RelativeLayout
+    android:id="@+id/number_rel"
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/img_card"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/tv_pt_contact_no"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/enterMobNo"
+        android:textColor="@color/white"
+        android:gravity="center|start"
+        android:textSize="15dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/input_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="05dp"
+        android:layout_below="@+id/tv_pt_contact_no">
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/pt_contact_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/btn_ok"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:hint="@string/contactno"
+            app:met_mask="+91##########"
+            />
+
+        <Button
+            android:id="@+id/btn_getotp_pt"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:gravity="end|center_vertical"
+            android:padding="5dp"
+            android:backgroundTint="@color/aquablue"
+            android:text="@string/getotpcode"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/darkgray"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+-->
+    <TextView
+        android:id="@+id/tv_pt_emailID"
+        android:layout_below="@id/lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/enteremailid"
+        android:textColor="@color/white"
+        android:gravity="center|start"
+        android:textSize="15dp"
+        />
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/pt_contact_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_pt_emailID"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="05dp"
+        android:gravity="center|start"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/btn_ok"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:hint="@string/email"
+        />
+
+    <TextView
+        android:id="@+id/tv_pt_pwd"
+        android:layout_below="@+id/pt_contact_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/enterpassword"
+        android:textColor="@color/white"
+        android:gravity="center|start"
+        android:textSize="15dp"
+        />
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/pt_pwd_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_pt_pwd"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="05dp"
+        android:gravity="center|start"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/btn_ok"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:hint="@string/password"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pt_pwd_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_signin_pt"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/four_30radius_btn"
+        android:gravity="center"
+        android:text="@string/SignIn"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/sign_up_here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signuphere"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/lightgray1"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+
+</RelativeLayout>
+
+
+

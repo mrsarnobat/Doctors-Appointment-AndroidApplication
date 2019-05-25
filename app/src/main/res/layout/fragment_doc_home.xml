@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sarnobatvipul.mydocapp.Fragment.docHomeFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/fragment_ptHomepage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_pt">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rel_3_hoSV"
+            android:layout_below="@+id/rel_2_hoSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <!-- id="@+id/edit_profile_card" -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/edit_profile_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/lightgray"
+                app:cardCornerRadius="05dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:id="@+id/edit_profile"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Edit Doctor Profile"
+                        android:textColor="@color/black"
+                        />
+
+                    <ImageView
+                        android:id="@+id/edit_profile_iv"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        app:srcCompat="@drawable/ic_mode_edit_black_24dp" />
+                    <ImageView
+                        android:id="@+id/profile_pic"
+                        android:layout_below="@+id/edit_profile"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/doc_icon"/>
+
+                    <TextView
+                        android:id="@+id/pt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/profile_pic"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_toEndOf="@+id/profile_pic"
+                        android:layout_toRightOf="@+id/profile_pic"
+                        android:text="Doctor Name"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/pt_name"
+                        android:layout_alignStart="@+id/pt_name"
+                        android:layout_below="@+id/pt_name"
+                        android:text="Doctor email"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pt_contact"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/pt_email"
+                        android:layout_alignStart="@+id/pt_email"
+                        android:layout_below="@+id/pt_email"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/contactno"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

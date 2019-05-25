@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">myDocApp</string>
+    <string name="getStarted">Get Started</string>
+    <string name="enterMobNo">Enter your mobile number</string>
+    <string name="name">Patient Name</string>
+    <string name="contactno">Contact No.</string>
+    <string name="continue_otp">Continue</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="getotpcode">Get OTP Code</string>
+    <string name="descotp">We have sent you an SMS on your mobile number with a 6-digit verification code(OTP)</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="nearby">NearBy</string>
+    <string name="appointment">Appointment</string>
+    <string name="reminder">Reminder</string>
+    <string name="doc_profile">Doctor Profile</string>
+    <string name="pt_profile">Patient Profile</string>
+    <string name="medicalRecord">Medical Record</string>
+    <string name="signout">Sign out</string>
+    <string name="setting">Setting</string>
+    <string name="feedback">Feedback</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="patientname">Patient Name</string>
+    <string name="contact">Contact</string>
+    <string name="email">E-mail ID</string>
+    <string name="gender">Gender</string>
+    <string name="dob">DOB</string>
+    <string name="bloodgrp">Blood Group</string>
+    <string name="addr">Address</string>
+    <string name="save">save</string>
+    <string name="pt_medicalreport">Medical Report</string>
+    <string name="egcontact">e.g. 8026531245</string>
+    <string name="egemail">e.g. abc01@email.com</string>
+    <string name="egname">e.g. FirstName LastName</string>
+    <string name="egaddr">e.g. 02/A, abc apt., manvelpada, virar(east)</string>
+
+    <string name="pt_reminder">Set Reminder</string>
+    <string name="pt_appointment">Set Appointment</string>
+    <string name="pt_nearby">Search NearBy clinic</string>
+    <string name="pt_medicalrecord">Medical Record</string>
+    <string name="pt_feedback">Feedback</string>
+    <string name="pt_setting">Setting</string>
+    <string name="pt_signout">SignOut</string>
+
+    <string name="SignUp">Sign Up</string>
+    <string name="SignIn">Sign In</string>
+    <string name="enteremailid">Enter Email ID</string>
+    <string name="enterpassword">Enter Password</string>
+    <string name="enterconfpassword">Enter Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="confpassword">Confirm Password</string>
+    <string name="loginhere">if already sign up!...Sign in here</string>
+    <string name="signuphere">Create New Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="ptgenders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="ptblooodgrp">
+        <item>None</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="doctorname">Doctor Name</string>
+    <string name="docAppointment">Doctor Appointments</string>
+    <string name="docMedicalRecord">History</string>
+
+    <string name="ptAppoint">Appointment</string>
+
+
+</resources>

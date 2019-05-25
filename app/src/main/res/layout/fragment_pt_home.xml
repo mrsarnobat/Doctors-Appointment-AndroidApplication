@@ -1,0 +1,662 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sarnobatvipul.mydocapp.Fragment.ptHomeFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/fragment_ptHomepage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_pt">
+
+        <RelativeLayout
+            android:id="@+id/rel_1_hoSV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_abt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="What are you looking for?"/>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_sv"
+                android:layout_below="@+id/tv_abt"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:scrollbars="none"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <!-- id="@+id/search_doc" -->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/search_doc"
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@color/lightblue"
+                        app:cardCornerRadius="5dp"
+                        >
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/doctor_search"/>
+
+                        <TextView
+
+                            android:layout_width="90dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="105dp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:background="@drawable/sidebottomradius"
+                            android:textAllCaps="true"
+                            android:textSize="8dp"
+                            android:textColor="@color/white"
+                            android:text="Search  Doctor"
+
+                            />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <!-- id="@+id/nearmedoc" -->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/nearmedoc"
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/lightblue"
+
+                        app:cardCornerRadius="5dp"
+                        >
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/doctor_nearme"/>
+
+                        <TextView
+
+
+                            android:layout_width="90dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="105dp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:background="@drawable/sidebottomradius"
+                            android:textAllCaps="true"
+                            android:textSize="8dp"
+                            android:textColor="@color/white"
+                            android:text="near by me Doctor"
+                            />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <!-- id="@+id/appointdoc" -->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/appointdoc"
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/lightblue"
+
+                        app:cardCornerRadius="5dp"
+                        >
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/doctor_appointment"/>
+
+                        <TextView
+
+
+                            android:layout_width="90dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="105dp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:background="@drawable/sidebottomradius"
+                            android:textAllCaps="true"
+                            android:textSize="8dp"
+                            android:textColor="@color/white"
+                            android:text="get Doctor appointment"/>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <!-- id="@+id/remider" -->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/remider"
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/lightblue"
+                        app:cardCornerRadius="5dp"
+                        >
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/medicine_reminders"/>
+
+                        <TextView
+
+                            android:layout_width="90dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="105dp"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:background="@drawable/sidebottomradius"
+                            android:textAllCaps="true"
+                            android:textSize="8dp"
+                            android:textColor="@color/white"
+                            android:text=" set medicine reminder "/>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <!-- :id="@+id/medical_report" -->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/medical_report"
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/lightblue"
+                        app:cardCornerRadius="5dp"
+                        >
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/doctor_medicalhistory"/>
+
+                        <TextView
+
+
+                            android:layout_width="90dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="105dp"
+                            android:background="@drawable/sidebottomradius"
+                            android:textAllCaps="true"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textSize="8dp"
+                            android:textColor="@color/white"
+                            android:text="medicine records"/>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_2_hoSV"
+            android:layout_below="@+id/rel_1_hoSV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_spe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Find doctors in top specialities"/>
+
+            <!-- id="@+id/tv_view" -->
+            <TextView
+                android:id="@+id/tv_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_alignBaseline="@+id/tv_spe"
+                android:layout_alignBottom="@+id/tv_spe"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="View All"
+                android:textStyle="bold"
+                android:textColor="@color/lightblue"
+                android:textSize="15dp" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_spe_sv"
+                android:layout_below="@+id/tv_spe"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:scrollbars="none"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/doc_dentist"
+                        android:layout_width="130dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/lightblue"
+                        app:cardCornerRadius="5dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/dental_care"
+                            android:background="@color/lightblue"
+                            />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="145dp"
+                            android:background="@drawable/sidebottomradius"
+                            android:backgroundTint="@color/lightgray"
+                            android:gravity="center"
+                            android:text="Dentist"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+
+                            />
+
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/doc_womenhelth"
+                        android:layout_width="130dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/lightblue"
+                        app:cardCornerRadius="5dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/womens_health"
+                            android:background="@color/lightblue"
+                            />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="145dp"
+                            android:background="@drawable/sidebottomradius"
+                            android:backgroundTint="@color/lightgray"
+                            android:gravity="center"
+                            android:text="Women's Health"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+
+                            />
+
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/doc_general"
+                        android:layout_width="130dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/lightblue"
+                        app:cardCornerRadius="5dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/general_doctor"
+                            android:background="@color/lightblue"
+                            />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="145dp"
+                            android:background="@drawable/sidebottomradius"
+                            android:backgroundTint="@color/lightgray"
+                            android:gravity="center"
+                            android:text="General Doctor"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+
+                            />
+
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/doc_child"
+                        android:layout_width="130dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/lightblue"
+                        app:cardCornerRadius="5dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/child_specialist"
+                            android:background="@color/lightblue"
+                            />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="145dp"
+                            android:background="@drawable/sidebottomradius"
+                            android:backgroundTint="@color/lightgray"
+                            android:gravity="center"
+                            android:text="Child Specialist"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+
+                            />
+
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/doc_eye"
+                        android:layout_width="130dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/lightblue"
+                        app:cardCornerRadius="5dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/eye_specialist"
+                            android:background="@color/lightblue"
+                            />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="145dp"
+                            android:background="@drawable/sidebottomradius"
+                            android:backgroundTint="@color/lightgray"
+                            android:gravity="center"
+                            android:text="eye specialist"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+
+                            />
+
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/doc_ayurveda"
+                        android:layout_width="130dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/lightblue"
+                        app:cardCornerRadius="5dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ayurveda"
+                            android:background="@color/lightblue"
+                            />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="145dp"
+                            android:background="@drawable/sidebottomradius"
+                            android:backgroundTint="@color/lightgray"
+                            android:gravity="center"
+                            android:text="Ayurveda"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+
+                            />
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <!-- id="@+id/doc_viewall" -->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/doc_viewall"
+                        android:layout_width="130dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/lightblue"
+                        app:cardCornerRadius="5dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            app:srcCompat="@drawable/ic_more_horiz_black_24dp"
+                            android:background="@color/lightblue"
+                            />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="145dp"
+                            android:background="@drawable/sidebottomradius"
+                            android:backgroundTint="@color/lightgray"
+                            android:gravity="center"
+                            android:text="View more"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+
+                            />
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_3_hoSV"
+            android:layout_below="@+id/rel_2_hoSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <!-- id="@+id/edit_profile_card" -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/edit_profile_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/lightgray"
+                app:cardCornerRadius="05dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:id="@+id/edit_profile"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Edit Patient Profile"
+                        android:textColor="@color/black"
+                        />
+
+                    <ImageView
+                        android:id="@+id/edit_profile_iv"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        app:srcCompat="@drawable/ic_mode_edit_black_24dp" />
+                    <ImageView
+                        android:id="@+id/profile_pic"
+                        android:layout_below="@+id/edit_profile"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/pt_icon"/>
+
+                    <TextView
+                        android:id="@+id/pt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/profile_pic"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_toEndOf="@+id/profile_pic"
+                        android:layout_toRightOf="@+id/profile_pic"
+                        android:text="Patient Name"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/pt_name"
+                        android:layout_alignStart="@+id/pt_name"
+                        android:layout_below="@+id/pt_name"
+                        android:text="Patient email"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pt_contact"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/pt_email"
+                        android:layout_alignStart="@+id/pt_email"
+                        android:layout_below="@+id/pt_email"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/contactno"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
